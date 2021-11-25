@@ -1,0 +1,39 @@
+---
+title: GAN系列-00 Generative Adversarial Network 生成對抗網路
+date: 2020-05-30 19:55:26
+tags: [GAN, Generative Adversarial Network]
+categories: [實作, GAN]
+thumbnail: /uploads/GAN.png
+toc: true
+---
+
+## GAN介紹
+
+Generative Adversarial Network(生成對抗網路，簡稱GAN)，算是這十年來最紅的技術，許多在機器學習領域的大佬都說：「GAN是這10年、20年來最酷、最有趣的想法。」，在網路上GAN的介紹文已經算是很氾濫了，這邊就簡單的介紹一下。
+
+<!--more-->
+
+GAN是由Ian Goodfellow所在2014年所提出的方法，原本是作為非監督式學習(Unsupervised learning)使用，不過在這幾年的不斷使用，它也被證明對監督式學習、半監督式學習、強化學習是有幫助的。GAN常被用於：
+
+1. 風格轉換(Style Transfer)，這是一種在GAN裡面最被人所知的應用，泛指可以將一種類型圖像轉換到另一種類別．例如：將照片轉換成梵谷風格的圖畫、將線稿轉換成上好色的圖片、將圖片中的馬變成斑馬等等。
+2. 生成高解析度的圖像．透過GAN將原本低解析度的圖片變成高解析度的．這個常用於：將老電影修補、轉換成高解析度的、同理也能將遊戲中原本低解析度的紋理透過GAN生成更清晰的紋理圖像等等。
+3. 提供更多資料，透過GAN可以生成和和原始資料相似的圖片或是資料．因為這些生成的資料假以亂真，可以將這些資料作為訓練資料來加強原本訓練的網路。
+4. 還有許多應用，如在天文、醫學、時裝...等等，就不一一列舉了。
+
+說了那麼多的應用，那GAN到底是什麼用了什麼概念讓它有這麼強大的能力呢？其實這個概念不難，就像是他本身名字所敘述的：對抗，GAN利用了兩個網路，分別是Generator跟Discriminator，來對抗彼此、精進本身，來達到目的。可以想像成偽造者跟鑑定家之間的比拼，以鈔票來舉例就是製造偽鈔者跟警察兩者的比拼，前者不斷製造假鈔來讓後者辨識，直到假鈔真假難辨為止。
+
+GAN具體的架構如同標題上方的圖片，Generator生成虛假的例子交給Discriminator辨識，Discriminator再將辨識結果回饋給Generator，透過不斷的訓練，讓兩個網路越來越強大，Generator生成的圖片就會越來越像真的了。
+
+## 各種GAN實作
+
+GAN經過這些年的發展有了許多的變體，來適應各種挑戰，這邊列舉了一些常見的GAN模型，將透過Tensorflow 2.x來實作：
+
+- [ ] [Generative Adversarial Network](http://papers.nips.cc/paper/5423-generative-adversarial-nets)
+- [ ] [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784)
+- [ ] [Deep Convolutional Generative Adversarial Network](https://arxiv.org/abs/1511.06434)
+- [ ] WGAN
+- [ ] WGAN-GP
+- [ ] CycleGAN
+- [ ] StarGAN
+- [ ] IRGAN
+- [ ] SeqGAN
