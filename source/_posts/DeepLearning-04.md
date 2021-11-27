@@ -3,7 +3,7 @@ title: DL Machine系列-04 Docker Hub Automated Build
 date: 2019-12-27 15:43:26
 tags: [docker, Dockerfile, Docker Hub, non-zero code 2]
 categories: DL Machine
-thumbnail: /uploads/docker.jpg
+thumbnail: /gallery/thumbnails/docker.jpg
 toc: true
 ---
 

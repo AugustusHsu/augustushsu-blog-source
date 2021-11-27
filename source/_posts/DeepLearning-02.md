@@ -3,7 +3,7 @@ title: DL Machine系列-02 建立LVM管理儲存空間
 date: 2019-12-19 12:55:23
 tags: [lvm, pv, vg, lv]
 categories: DL Machine
-thumbnail: /uploads/nvidia_docker-cover.png
+thumbnail: /gallery/thumbnails/nvidia_docker-cover.png
 toc: true
 ---
 

@@ -3,7 +3,7 @@ title: DL Machine系列-03 Docker
 date: 2019-12-23 12:03:26
 tags: [docker, Dockerfile, portainer, xrdp, anaconda, cuda, cudnn]
 categories: DL Machine
-thumbnail: /uploads/docker.jpg
+thumbnail: /gallery/thumbnails/docker.jpg
 toc: true
 ---
 

@@ -3,7 +3,7 @@ title: DL Machine系列-00 環境建置
 date: 2019-12-17 15:30:26
 tags: [ubuntu, ubuntu-18.04, xrdp, static ip, nvidia-gpu, docker]
 categories: DL Machine
-thumbnail: /uploads/nvidia_docker-cover.png
+thumbnail: /gallery/thumbnails/nvidia_docker-cover.png
 toc: true
 ---
 

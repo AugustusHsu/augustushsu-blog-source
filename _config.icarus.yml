@@ -3,21 +3,22 @@ version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: cyberpunk
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: 
+    text: Augustus
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: /img/favicon.png
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Name of the web application (default to the site title)
-        name: 
+        name: Augustus Blog
         # The displayed name of the web application
         # when there is not enough space to display full name
-        short_name: 
+        short_name: Augustus
         # The start URL of the web application
-        start_url: 
+        start_url: https://augustushsu.github.io/
         # The default theme color for the application
         theme_color: 
         # A placeholder background color for the application page to display
@@ -114,7 +115,7 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: 'https://augustushsu.github.io/'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -127,7 +128,16 @@ footer:
             url: 'https://creativecommons.org/licenses/by/4.0/'
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: 'https://github.com/AugustusHsu'
+            # url: 'https://github.com/ppoffice/hexo-theme-icarus'
+    # links:
+    #     CC BY-NC-SA 4.0:
+    #         icon:
+    #           - fab fa-creative-commons
+    #           - fab fa-creative-commons-by
+    #           - fab fa-creative-commons-nc
+    #           - fab fa-creative-commons-sa
+    #         url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
 # Article related configurations
 article:
     # Code highlight settings
@@ -163,48 +173,48 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: ''
+    shortname: 'augustus-blog'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
-    # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: ''
-    # Alipay donate button configurations
-    -
-        type: alipay
-        # Alipay qrcode image URL
-        qrcode: ''
-    # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
-        # URL to the "Buy me a coffee" page
-        url: ''
-    # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
-    # Paypal donate button configurations
-    -
-        type: paypal
-        # Paypal business ID or email address
-        business: ''
-        # Currency code
-        currency_code: USD
-    # Wechat donate button configurations
-    -
-        type: wechat
-        # Wechat qrcode image URL
-        qrcode: ''
+# donates:
+#     # "Afdian.net" donate button configurations
+#     -
+#         type: afdian
+#         # URL to the "Afdian.net" personal page
+#         url: ''
+#     # Alipay donate button configurations
+#     -
+#         type: alipay
+#         # Alipay qrcode image URL
+#         qrcode: ''
+#     # "Buy me a coffee" donate button configurations
+#     -
+#         type: buymeacoffee
+#         # URL to the "Buy me a coffee" page
+#         url: ''
+#     # Patreon donate button configurations
+#     -
+#         type: patreon
+#         # URL to the Patreon page
+#         url: ''
+#     # Paypal donate button configurations
+#     -
+#         type: paypal
+#         # Paypal business ID or email address
+#         business: 'V6DFAWSEDJJHE'
+#         # Currency code
+#         currency_code: USD
+#     # Wechat donate button configurations
+#     -
+#         type: wechat
+#         # Wechat qrcode image URL
+#         qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
-    type: sharethis
+    type: addtoany
     # URL to the ShareThis share plugin script
-    install_url: ''
+    # install_url: //s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5def9374e9552f2f
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -225,24 +235,24 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: Augustus
         # Author title
-        author_title: Your title
+        author_title: Strike the iron while it is hot
         # Author's current location
-        location: Your location
+        location: New Taipei City, Taiwan
         # URL or path to the avatar image
-        avatar: 
+        avatar: /img/MyPhoto.jpg
         # Whether show the rounded avatar image
-        avatar_rounded: false
+        avatar_rounded: true
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: 'https://github.com/ppoffice'
+        follow_link: 'https://github.com/AugustusHsu'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/ppoffice'
+                url: 'https://github.com/AugustusHsu'
             Facebook:
                 icon: fab fa-facebook
                 url: 'https://facebook.com'
@@ -275,6 +285,8 @@ widgets:
         links:
             Hexo: 'https://hexo.io'
             Bulma: 'https://bulma.io'
+            PPOffice: 'https://github.com/ppoffice'
+            辣椒の酱: 'https://removeif.github.io/friend/'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -283,17 +295,17 @@ widgets:
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: archives
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: tags
     # Google FeedBurner email subscription widget configurations
     -
@@ -305,14 +317,14 @@ widgets:
         # Feedburner ID
         feedburner_id: ''
     # Google AdSense unit configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: adsense
-        # AdSense client ID
-        client_id: ''
-        # AdSense AD unit ID
-        slot_id: ''
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: adsense
+    #     # AdSense client ID
+    #     client_id: ''
+    #     # AdSense AD unit ID
+    #     slot_id: ''
     # Follow.it email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

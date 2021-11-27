@@ -3,7 +3,7 @@ title: DL Machine系列-01 安裝Docker-19.03+Nvidia-docker
 date: 2019-12-18 17:32:56
 tags: [docker-19.03, nvidia-docker, native gpu, nvidia-container-toolkit]
 categories: DL Machine
-thumbnail: /uploads/nvidia_docker-cover.png
+thumbnail: /gallery/thumbnails/nvidia_docker-cover.png
 toc: true
 ---
 
