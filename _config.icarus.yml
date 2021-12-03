@@ -13,7 +13,7 @@ head:
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Name of the web application (default to the site title)
-        name: Augustus Blog
+        name: Augustus's Blog
         # The displayed name of the web application
         # when there is not enough space to display full name
         short_name: Augustus
@@ -113,7 +113,7 @@ navbar:
         About: /about
     # Links to be shown on the right of the navigation bar
     links:
-        Download on GitHub:
+        My GitHub:
             icon: fab fa-github
             url: 'https://augustushsu.github.io/'
 # Page footer configurations
@@ -308,14 +308,14 @@ widgets:
         position: right
         type: tags
     # Google FeedBurner email subscription widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: subscribe_email
-        # Hint text under the email input
-        description: 
-        # Feedburner ID
-        feedburner_id: ''
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: subscribe_email
+    #     # Hint text under the email input
+    #     description: 
+    #     # Feedburner ID
+    #     feedburner_id: ''
     # Google AdSense unit configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
@@ -382,7 +382,7 @@ plugins:
     # https://analytics.google.com
     google_analytics:
         # Google Analytics tracking ID
-        tracking_id: 
+        tracking_id: UA-154556648-1
     # Hotjar user feedback plugin
     # https://www.hotjar.com/
     hotjar:
@@ -390,7 +390,7 @@ plugins:
         site_id: 
     # Enable the KaTeX math typesetting support
     # https://katex.org/
-    katex: false
+    katex: true
     # Enable the MathJax math typesetting support
     # https://www.mathjax.org/
     mathjax: false
