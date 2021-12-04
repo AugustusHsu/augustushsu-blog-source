@@ -11,15 +11,21 @@ toc: true
 Triplet Loss的介紹，相信在網路上已經有許多例子了，用途跟作用這邊就不多作介紹，將triplet的公式列出來，直接進入正題：
 
 <!--more-->
+
+{% raw %}
+
 $$
-\LARGE{\mathcal{L_{triplet}}=\max{(\sum_{i=1}^N[||f^a_i - f^p_i||_2^2-||f^a_i - f^n_i||_2^2 + margin] ,\ 0)}}
+{\mathcal{L_{triplet}}=\max{(\sum_{i=1}^N[||f^a_i - f^p_i||_2^2-||f^a_i - f^n_i||_2^2 + margin] ,\ 0)}}
 $$
+
+{% endraw %}
+
 這邊會依序測試兩種不一樣的Triplet來計算Triplet Loss，分別是：
 
 1. Batch Hard
 2. Semihard
 
-<img src="semi-hard_triplet.png" width="50%" height="50%">
+<img src="https://drive.google.com/uc?export=view&id=1zXXicrjoieVZLGGg3qmcLJaryw-ZKeo4" alt="semi-hard_triplet" width="50%" height="50%" style="display:block; margin:auto;">
 
 ### Sample Data
 
@@ -261,7 +267,7 @@ mask = np.logical_and(a, b)
 
 這邊將`pdist_matrix`中的batch*batch展開，將每一筆當作AP和對應的row去比較(第一筆為row 1對column 1的距離，讓他對第一個row比較，如下圖)，所以這邊評估在每個row中哪些比他本身更大，更大的作為True。
 
-<img src="semi-hard_sample.png" width="70%" height="70%">
+<img src="https://drive.google.com/uc?export=view&id=1uG1hhE55cS6XudRBHEjOB7a8XYuV1lL-" alt="semi-hard_sample" width="70%" height="70%" style="display:block; margin:auto;">
 
 (1.1對1.all比較，1.2對2.all比較，...
  2.1對1.all比較，2.2對2.all比較，...
